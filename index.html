@@ -132,7 +132,7 @@
     <!-- Hidden heading so the block has a proper section title for AT users -->
     <h2 id="mortgage-title" class="sr-only">Mortgage cash flow equations</h2>
 
-    <!-- Monthly Cash Flow Equation -->
+    <!-- 1) Monthly Cash Flow Equation -->
     <div class="equation-row" role="group" aria-label="Monthly Cash Flow Equation">
       <p class="equation-label">
         Monthly Cash Flow Equation:
@@ -153,7 +153,7 @@
               </mrow>
               <mrow>
                 <mn>1</mn>
-                <mo>-</mo>
+                <mo>−</mo>
                 <msup>
                   <mrow>
                     <mo>(</mo>
@@ -166,7 +166,7 @@
                     <mo>)</mo>
                   </mrow>
                   <mrow>
-                    <mo>-</mo>
+                    <mo>−</mo>
                     <mi mathcolor="#0079a6">T</mi>
                   </mrow>
                 </msup>
@@ -177,7 +177,33 @@
       </div>
     </div>
 
-    <!-- Interest Cash Flow where t > 1 -->
+    <!-- 2) Interest Cash Flow Equation for Year 1 (inserted) -->
+    <div class="equation-row" role="group" aria-label="Interest Cash Flow Equation for Year 1">
+      <p class="equation-label">
+        Interest Cash Flow Equation for Year 1:
+      </p>
+      <div class="equation-math">
+        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+          <mrow>
+            <msub>
+              <mi mathcolor="#0079a6">INT</mi>
+              <mn>1</mn>
+            </msub>
+            <mo>=</mo>
+            <mfrac>
+              <mrow>
+                <mi mathcolor="#b95b1d">PV</mi>
+                <mo>×</mo>
+                <mi mathcolor="#7a46ff">r</mi>
+              </mrow>
+              <mn>12</mn>
+            </mfrac>
+          </mrow>
+        </math>
+      </div>
+    </div>
+
+    <!-- 3) Interest Cash Flow where t > 1 -->
     <div class="equation-row" role="group" aria-label="General Interest Cash Flow Equation where t is greater than or equal to 2">
       <p class="equation-label">
         General Interest Cash Flow Equation where t ≥ 2:
@@ -195,7 +221,7 @@
                 <mrow>
                   <mo>(</mo>
                   <mi mathcolor="#b95b1d">PV</mi>
-                  <mo>-</mo>
+                  <mo>−</mo>
                   <munderover>
                     <mo>∑</mo>
                     <mrow>
@@ -205,7 +231,7 @@
                     </mrow>
                     <mrow>
                       <mi mathcolor="#0079a6">t</mi>
-                      <mo>-</mo>
+                      <mo>−</mo>
                       <mn>1</mn>
                     </mrow>
                   </munderover>
@@ -225,7 +251,7 @@
       </div>
     </div>
 
-    <!-- Principal Amortization Equation -->
+    <!-- 4) Principal Amortization Equation -->
     <div class="equation-row" role="group" aria-label="Principal Amortization Equation">
       <p class="equation-label">
         Principal Amortization Equation:
@@ -239,7 +265,7 @@
             </msub>
             <mo>=</mo>
             <mi mathcolor="#3c6ae5">PMT</mi>
-            <mo>-</mo>
+            <mo>−</mo>
             <msub>
               <mi mathcolor="#0079a6">INT</mi>
               <mi mathcolor="#0079a6">t</mi>
@@ -248,6 +274,7 @@
         </math>
       </div>
     </div>
+
   </section>
 </body>
 </html>
